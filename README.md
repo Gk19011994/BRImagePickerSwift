@@ -2,6 +2,7 @@
 
 original code get here in objective c-> https://github.com/BrammanandSoni/BRImagePicker
 
+preview -> https://camo.githubusercontent.com/9e3d43e01af4922e7549e8f8a0ee4795a033eb0d/687474703a2f2f6d656469612e67697068792e636f6d2f6d656469612f336f456475554b4d44326a6a715355516d592f67697068792e676966
 
 swift 4 ios 12 xcode 10.1
 
