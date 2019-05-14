@@ -1,0 +1,800 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4191362C228AA868009DA058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4191362B228AA868009DA058 /* AppDelegate.swift */; };
+		4191362E228AA868009DA058 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4191362D228AA868009DA058 /* ViewController.swift */; };
+		41913631228AA868009DA058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4191362F228AA868009DA058 /* Main.storyboard */; };
+		41913633228AA869009DA058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41913632228AA869009DA058 /* Assets.xcassets */; };
+		41913636228AA869009DA058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41913634228AA869009DA058 /* LaunchScreen.storyboard */; };
+		41913641228AA869009DA058 /* BRImagePickerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41913640228AA869009DA058 /* BRImagePickerSwiftTests.swift */; };
+		4191364C228AA869009DA058 /* BRImagePickerSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4191364B228AA869009DA058 /* BRImagePickerSwiftUITests.swift */; };
+		41913687228AA926009DA058 /* UIImage+ResizeMagick.m in Sources */ = {isa = PBXBuildFile; fileRef = 4191365C228AA925009DA058 /* UIImage+ResizeMagick.m */; };
+		41913688228AA926009DA058 /* BR_ImageInfo+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 4191365D228AA925009DA058 /* BR_ImageInfo+Image.m */; };
+		41913689228AA926009DA058 /* BRPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41913663228AA925009DA058 /* BRPhotoPickerController.m */; };
+		4191368A228AA926009DA058 /* BRPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41913664228AA925009DA058 /* BRPreviewViewController.m */; };
+		4191368B228AA926009DA058 /* BRImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 41913665228AA925009DA058 /* BRImagePicker.m */; };
+		4191368C228AA926009DA058 /* BRPhotoPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41913666228AA925009DA058 /* BRPhotoPicker.storyboard */; };
+		4191368D228AA926009DA058 /* BR_ImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 41913669228AA925009DA058 /* BR_ImageInfo.m */; };
+		4191368E228AA926009DA058 /* BR_AssetsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4191366A228AA925009DA058 /* BR_AssetsInfo.m */; };
+		4191368F228AA926009DA058 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 4191366E228AA925009DA058 /* add.png */; };
+		41913690228AA926009DA058 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 4191366F228AA925009DA058 /* check.png */; };
+		41913691228AA926009DA058 /* crop.png in Resources */ = {isa = PBXBuildFile; fileRef = 41913670228AA925009DA058 /* crop.png */; };
+		41913692228AA926009DA058 /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41913671228AA925009DA058 /* check@2x.png */; };
+		41913693228AA926009DA058 /* Delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 41913672228AA925009DA058 /* Delete.png */; };
+		41913694228AA926009DA058 /* PEPhotoCropEditor.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 41913675228AA925009DA058 /* PEPhotoCropEditor.bundle */; };
+		41913695228AA926009DA058 /* UIImage+PECrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 41913678228AA925009DA058 /* UIImage+PECrop.m */; };
+		41913696228AA926009DA058 /* PEResizeControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 41913679228AA925009DA058 /* PEResizeControl.m */; };
+		41913697228AA926009DA058 /* PECropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4191367A228AA925009DA058 /* PECropViewController.m */; };
+		41913698228AA926009DA058 /* PECropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4191367B228AA925009DA058 /* PECropView.m */; };
+		41913699228AA926009DA058 /* PECropRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4191367C228AA925009DA058 /* PECropRectView.m */; };
+		4191369A228AA926009DA058 /* BRPhotosCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41913684228AA925009DA058 /* BRPhotosCell.m */; };
+		4191369B228AA926009DA058 /* BRPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41913685228AA925009DA058 /* BRPreviewCell.m */; };
+		419136A0228AAA80009DA058 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4191369F228AAA80009DA058 /* AssetsLibrary.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4191363D228AA869009DA058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41913620228AA868009DA058 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41913627228AA868009DA058;
+			remoteInfo = BRImagePickerSwift;
+		};
+		41913648228AA869009DA058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41913620228AA868009DA058 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41913627228AA868009DA058;
+			remoteInfo = BRImagePickerSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41913628228AA868009DA058 /* BRImagePickerSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BRImagePickerSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4191362B228AA868009DA058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4191362D228AA868009DA058 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41913630228AA868009DA058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41913632228AA869009DA058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41913635228AA869009DA058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41913637228AA869009DA058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4191363C228AA869009DA058 /* BRImagePickerSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BRImagePickerSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41913640228AA869009DA058 /* BRImagePickerSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRImagePickerSwiftTests.swift; sourceTree = "<group>"; };
+		41913642228AA869009DA058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41913647228AA869009DA058 /* BRImagePickerSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BRImagePickerSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4191364B228AA869009DA058 /* BRImagePickerSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRImagePickerSwiftUITests.swift; sourceTree = "<group>"; };
+		4191364D228AA869009DA058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4191365A228AA925009DA058 /* BRImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRImagePicker.h; sourceTree = "<group>"; };
+		4191365C228AA925009DA058 /* UIImage+ResizeMagick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeMagick.m"; sourceTree = "<group>"; };
+		4191365D228AA925009DA058 /* BR_ImageInfo+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BR_ImageInfo+Image.m"; sourceTree = "<group>"; };
+		4191365E228AA925009DA058 /* UIImage+ResizeMagick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeMagick.h"; sourceTree = "<group>"; };
+		4191365F228AA925009DA058 /* BR_ImageInfo+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BR_ImageInfo+Image.h"; sourceTree = "<group>"; };
+		41913661228AA925009DA058 /* BRPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPhotoPickerController.h; sourceTree = "<group>"; };
+		41913662228AA925009DA058 /* BRPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPreviewViewController.h; sourceTree = "<group>"; };
+		41913663228AA925009DA058 /* BRPhotoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPhotoPickerController.m; sourceTree = "<group>"; };
+		41913664228AA925009DA058 /* BRPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPreviewViewController.m; sourceTree = "<group>"; };
+		41913665228AA925009DA058 /* BRImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRImagePicker.m; sourceTree = "<group>"; };
+		41913666228AA925009DA058 /* BRPhotoPicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BRPhotoPicker.storyboard; sourceTree = "<group>"; };
+		41913668228AA925009DA058 /* BR_AssetsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BR_AssetsInfo.h; sourceTree = "<group>"; };
+		41913669228AA925009DA058 /* BR_ImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BR_ImageInfo.m; sourceTree = "<group>"; };
+		4191366A228AA925009DA058 /* BR_AssetsInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BR_AssetsInfo.m; sourceTree = "<group>"; };
+		4191366B228AA925009DA058 /* BR_ImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BR_ImageInfo.h; sourceTree = "<group>"; };
+		4191366E228AA925009DA058 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		4191366F228AA925009DA058 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		41913670228AA925009DA058 /* crop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crop.png; sourceTree = "<group>"; };
+		41913671228AA925009DA058 /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
+		41913672228AA925009DA058 /* Delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Delete.png; sourceTree = "<group>"; };
+		41913675228AA925009DA058 /* PEPhotoCropEditor.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PEPhotoCropEditor.bundle; sourceTree = "<group>"; };
+		41913677228AA925009DA058 /* PECropRectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PECropRectView.h; sourceTree = "<group>"; };
+		41913678228AA925009DA058 /* UIImage+PECrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PECrop.m"; sourceTree = "<group>"; };
+		41913679228AA925009DA058 /* PEResizeControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PEResizeControl.m; sourceTree = "<group>"; };
+		4191367A228AA925009DA058 /* PECropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PECropViewController.m; sourceTree = "<group>"; };
+		4191367B228AA925009DA058 /* PECropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PECropView.m; sourceTree = "<group>"; };
+		4191367C228AA925009DA058 /* PECropRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PECropRectView.m; sourceTree = "<group>"; };
+		4191367D228AA925009DA058 /* UIImage+PECrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PECrop.h"; sourceTree = "<group>"; };
+		4191367E228AA925009DA058 /* PEResizeControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PEResizeControl.h; sourceTree = "<group>"; };
+		4191367F228AA925009DA058 /* PECropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PECropView.h; sourceTree = "<group>"; };
+		41913680228AA925009DA058 /* PECropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PECropViewController.h; sourceTree = "<group>"; };
+		41913682228AA925009DA058 /* BRPhotosCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPhotosCell.h; sourceTree = "<group>"; };
+		41913683228AA925009DA058 /* BRPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPreviewCell.h; sourceTree = "<group>"; };
+		41913684228AA925009DA058 /* BRPhotosCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPhotosCell.m; sourceTree = "<group>"; };
+		41913685228AA925009DA058 /* BRPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPreviewCell.m; sourceTree = "<group>"; };
+		4191369D228AAA2A009DA058 /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
+		4191369F228AAA80009DA058 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41913625228AA868009DA058 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419136A0228AAA80009DA058 /* AssetsLibrary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41913639228AA869009DA058 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41913644228AA869009DA058 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4191361F228AA868009DA058 = {
+			isa = PBXGroup;
+			children = (
+				4191362A228AA868009DA058 /* BRImagePickerSwift */,
+				4191363F228AA869009DA058 /* BRImagePickerSwiftTests */,
+				4191364A228AA869009DA058 /* BRImagePickerSwiftUITests */,
+				41913629228AA868009DA058 /* Products */,
+				4191369E228AAA7F009DA058 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		41913629228AA868009DA058 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41913628228AA868009DA058 /* BRImagePickerSwift.app */,
+				4191363C228AA869009DA058 /* BRImagePickerSwiftTests.xctest */,
+				41913647228AA869009DA058 /* BRImagePickerSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4191362A228AA868009DA058 /* BRImagePickerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				4191362B228AA868009DA058 /* AppDelegate.swift */,
+				4191362D228AA868009DA058 /* ViewController.swift */,
+				4191362F228AA868009DA058 /* Main.storyboard */,
+				41913632228AA869009DA058 /* Assets.xcassets */,
+				41913634228AA869009DA058 /* LaunchScreen.storyboard */,
+				41913637228AA869009DA058 /* Info.plist */,
+				41913659228AA925009DA058 /* BRImagePicker */,
+				4191369D228AAA2A009DA058 /* bridge.h */,
+			);
+			path = BRImagePickerSwift;
+			sourceTree = "<group>";
+		};
+		4191363F228AA869009DA058 /* BRImagePickerSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				41913640228AA869009DA058 /* BRImagePickerSwiftTests.swift */,
+				41913642228AA869009DA058 /* Info.plist */,
+			);
+			path = BRImagePickerSwiftTests;
+			sourceTree = "<group>";
+		};
+		4191364A228AA869009DA058 /* BRImagePickerSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4191364B228AA869009DA058 /* BRImagePickerSwiftUITests.swift */,
+				4191364D228AA869009DA058 /* Info.plist */,
+			);
+			path = BRImagePickerSwiftUITests;
+			sourceTree = "<group>";
+		};
+		41913659228AA925009DA058 /* BRImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				4191365A228AA925009DA058 /* BRImagePicker.h */,
+				4191365B228AA925009DA058 /* Extension */,
+				41913660228AA925009DA058 /* Controller */,
+				41913665228AA925009DA058 /* BRImagePicker.m */,
+				41913666228AA925009DA058 /* BRPhotoPicker.storyboard */,
+				41913667228AA925009DA058 /* Model */,
+				4191366C228AA925009DA058 /* Resource */,
+				41913681228AA925009DA058 /* Views */,
+			);
+			name = BRImagePicker;
+			path = "../../../Govind WORK/Demo/Test2/Test2/BRImagePicker";
+			sourceTree = "<group>";
+		};
+		4191365B228AA925009DA058 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4191365C228AA925009DA058 /* UIImage+ResizeMagick.m */,
+				4191365D228AA925009DA058 /* BR_ImageInfo+Image.m */,
+				4191365E228AA925009DA058 /* UIImage+ResizeMagick.h */,
+				4191365F228AA925009DA058 /* BR_ImageInfo+Image.h */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		41913660228AA925009DA058 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				41913661228AA925009DA058 /* BRPhotoPickerController.h */,
+				41913662228AA925009DA058 /* BRPreviewViewController.h */,
+				41913663228AA925009DA058 /* BRPhotoPickerController.m */,
+				41913664228AA925009DA058 /* BRPreviewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		41913667228AA925009DA058 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41913668228AA925009DA058 /* BR_AssetsInfo.h */,
+				41913669228AA925009DA058 /* BR_ImageInfo.m */,
+				4191366A228AA925009DA058 /* BR_AssetsInfo.m */,
+				4191366B228AA925009DA058 /* BR_ImageInfo.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4191366C228AA925009DA058 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4191366D228AA925009DA058 /* Images */,
+				41913673228AA925009DA058 /* ImageCropper */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		4191366D228AA925009DA058 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4191366E228AA925009DA058 /* add.png */,
+				4191366F228AA925009DA058 /* check.png */,
+				41913670228AA925009DA058 /* crop.png */,
+				41913671228AA925009DA058 /* check@2x.png */,
+				41913672228AA925009DA058 /* Delete.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		41913673228AA925009DA058 /* ImageCropper */ = {
+			isa = PBXGroup;
+			children = (
+				41913674228AA925009DA058 /* Resources */,
+				41913676228AA925009DA058 /* Lib */,
+			);
+			path = ImageCropper;
+			sourceTree = "<group>";
+		};
+		41913674228AA925009DA058 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41913675228AA925009DA058 /* PEPhotoCropEditor.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		41913676228AA925009DA058 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				41913677228AA925009DA058 /* PECropRectView.h */,
+				41913678228AA925009DA058 /* UIImage+PECrop.m */,
+				41913679228AA925009DA058 /* PEResizeControl.m */,
+				4191367A228AA925009DA058 /* PECropViewController.m */,
+				4191367B228AA925009DA058 /* PECropView.m */,
+				4191367C228AA925009DA058 /* PECropRectView.m */,
+				4191367D228AA925009DA058 /* UIImage+PECrop.h */,
+				4191367E228AA925009DA058 /* PEResizeControl.h */,
+				4191367F228AA925009DA058 /* PECropView.h */,
+				41913680228AA925009DA058 /* PECropViewController.h */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		41913681228AA925009DA058 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41913682228AA925009DA058 /* BRPhotosCell.h */,
+				41913683228AA925009DA058 /* BRPreviewCell.h */,
+				41913684228AA925009DA058 /* BRPhotosCell.m */,
+				41913685228AA925009DA058 /* BRPreviewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4191369E228AAA7F009DA058 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4191369F228AAA80009DA058 /* AssetsLibrary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41913627228AA868009DA058 /* BRImagePickerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41913650228AA869009DA058 /* Build configuration list for PBXNativeTarget "BRImagePickerSwift" */;
+			buildPhases = (
+				41913624228AA868009DA058 /* Sources */,
+				41913625228AA868009DA058 /* Frameworks */,
+				41913626228AA868009DA058 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BRImagePickerSwift;
+			productName = BRImagePickerSwift;
+			productReference = 41913628228AA868009DA058 /* BRImagePickerSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4191363B228AA869009DA058 /* BRImagePickerSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41913653228AA869009DA058 /* Build configuration list for PBXNativeTarget "BRImagePickerSwiftTests" */;
+			buildPhases = (
+				41913638228AA869009DA058 /* Sources */,
+				41913639228AA869009DA058 /* Frameworks */,
+				4191363A228AA869009DA058 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4191363E228AA869009DA058 /* PBXTargetDependency */,
+			);
+			name = BRImagePickerSwiftTests;
+			productName = BRImagePickerSwiftTests;
+			productReference = 4191363C228AA869009DA058 /* BRImagePickerSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		41913646228AA869009DA058 /* BRImagePickerSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41913656228AA869009DA058 /* Build configuration list for PBXNativeTarget "BRImagePickerSwiftUITests" */;
+			buildPhases = (
+				41913643228AA869009DA058 /* Sources */,
+				41913644228AA869009DA058 /* Frameworks */,
+				41913645228AA869009DA058 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41913649228AA869009DA058 /* PBXTargetDependency */,
+			);
+			name = BRImagePickerSwiftUITests;
+			productName = BRImagePickerSwiftUITests;
+			productReference = 41913647228AA869009DA058 /* BRImagePickerSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41913620228AA868009DA058 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Govind;
+				TargetAttributes = {
+					41913627228AA868009DA058 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4191363B228AA869009DA058 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 41913627228AA868009DA058;
+					};
+					41913646228AA869009DA058 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 41913627228AA868009DA058;
+					};
+				};
+			};
+			buildConfigurationList = 41913623228AA868009DA058 /* Build configuration list for PBXProject "BRImagePickerSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4191361F228AA868009DA058;
+			productRefGroup = 41913629228AA868009DA058 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41913627228AA868009DA058 /* BRImagePickerSwift */,
+				4191363B228AA869009DA058 /* BRImagePickerSwiftTests */,
+				41913646228AA869009DA058 /* BRImagePickerSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41913626228AA868009DA058 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41913691228AA926009DA058 /* crop.png in Resources */,
+				41913690228AA926009DA058 /* check.png in Resources */,
+				41913636228AA869009DA058 /* LaunchScreen.storyboard in Resources */,
+				41913693228AA926009DA058 /* Delete.png in Resources */,
+				41913694228AA926009DA058 /* PEPhotoCropEditor.bundle in Resources */,
+				41913633228AA869009DA058 /* Assets.xcassets in Resources */,
+				41913631228AA868009DA058 /* Main.storyboard in Resources */,
+				4191368F228AA926009DA058 /* add.png in Resources */,
+				4191368C228AA926009DA058 /* BRPhotoPicker.storyboard in Resources */,
+				41913692228AA926009DA058 /* check@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4191363A228AA869009DA058 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41913645228AA869009DA058 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41913624228AA868009DA058 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4191369B228AA926009DA058 /* BRPreviewCell.m in Sources */,
+				41913698228AA926009DA058 /* PECropView.m in Sources */,
+				41913695228AA926009DA058 /* UIImage+PECrop.m in Sources */,
+				41913689228AA926009DA058 /* BRPhotoPickerController.m in Sources */,
+				4191368E228AA926009DA058 /* BR_AssetsInfo.m in Sources */,
+				4191362E228AA868009DA058 /* ViewController.swift in Sources */,
+				41913696228AA926009DA058 /* PEResizeControl.m in Sources */,
+				4191362C228AA868009DA058 /* AppDelegate.swift in Sources */,
+				4191368D228AA926009DA058 /* BR_ImageInfo.m in Sources */,
+				4191368A228AA926009DA058 /* BRPreviewViewController.m in Sources */,
+				41913699228AA926009DA058 /* PECropRectView.m in Sources */,
+				4191368B228AA926009DA058 /* BRImagePicker.m in Sources */,
+				41913697228AA926009DA058 /* PECropViewController.m in Sources */,
+				41913687228AA926009DA058 /* UIImage+ResizeMagick.m in Sources */,
+				4191369A228AA926009DA058 /* BRPhotosCell.m in Sources */,
+				41913688228AA926009DA058 /* BR_ImageInfo+Image.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41913638228AA869009DA058 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41913641228AA869009DA058 /* BRImagePickerSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41913643228AA869009DA058 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4191364C228AA869009DA058 /* BRImagePickerSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4191363E228AA869009DA058 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41913627228AA868009DA058 /* BRImagePickerSwift */;
+			targetProxy = 4191363D228AA869009DA058 /* PBXContainerItemProxy */;
+		};
+		41913649228AA869009DA058 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41913627228AA868009DA058 /* BRImagePickerSwift */;
+			targetProxy = 41913648228AA869009DA058 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4191362F228AA868009DA058 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41913630228AA868009DA058 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		41913634228AA869009DA058 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41913635228AA869009DA058 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4191364E228AA869009DA058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4191364F228AA869009DA058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41913651228AA869009DA058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84DSE9H62V;
+				INFOPLIST_FILE = BRImagePickerSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gk.BRImagePickerSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = BRImagePickerSwift/bridge.h;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41913652228AA869009DA058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84DSE9H62V;
+				INFOPLIST_FILE = BRImagePickerSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gk.BRImagePickerSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = BRImagePickerSwift/bridge.h;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41913654228AA869009DA058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84DSE9H62V;
+				INFOPLIST_FILE = BRImagePickerSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gk.BRImagePickerSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BRImagePickerSwift.app/BRImagePickerSwift";
+			};
+			name = Debug;
+		};
+		41913655228AA869009DA058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84DSE9H62V;
+				INFOPLIST_FILE = BRImagePickerSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gk.BRImagePickerSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BRImagePickerSwift.app/BRImagePickerSwift";
+			};
+			name = Release;
+		};
+		41913657228AA869009DA058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84DSE9H62V;
+				INFOPLIST_FILE = BRImagePickerSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gk.BRImagePickerSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BRImagePickerSwift;
+			};
+			name = Debug;
+		};
+		41913658228AA869009DA058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84DSE9H62V;
+				INFOPLIST_FILE = BRImagePickerSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gk.BRImagePickerSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BRImagePickerSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41913623228AA868009DA058 /* Build configuration list for PBXProject "BRImagePickerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4191364E228AA869009DA058 /* Debug */,
+				4191364F228AA869009DA058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41913650228AA869009DA058 /* Build configuration list for PBXNativeTarget "BRImagePickerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41913651228AA869009DA058 /* Debug */,
+				41913652228AA869009DA058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41913653228AA869009DA058 /* Build configuration list for PBXNativeTarget "BRImagePickerSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41913654228AA869009DA058 /* Debug */,
+				41913655228AA869009DA058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41913656228AA869009DA058 /* Build configuration list for PBXNativeTarget "BRImagePickerSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41913657228AA869009DA058 /* Debug */,
+				41913658228AA869009DA058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41913620228AA868009DA058 /* Project object */;
+}
