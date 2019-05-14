@@ -7,7 +7,7 @@ preview -> https://camo.githubusercontent.com/9e3d43e01af4922e7549e8f8a0ee4795a0
 swift 4 ios 12 xcode 10.1
 
  1. copy and paste BRimagepicker folder
- 2. make bridge header file and import bs files
+ 2. make bridge header file and import br files
  3. register bridge file at build setting
  4. Add library assetsLibrary.framework and import in the view controller
  5. implement code in action(Button)
